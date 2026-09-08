@@ -94,7 +94,7 @@ final class Life360VideoAdSlotView: AdSlotView, Life360BannerViewDelegate {
     
     private func setTestingParameters() {
         UserDefaults.standard.set(
-            [Self.configID: ["ntv_a": "442149", "ntv_tm": "tout"]],
+            [Self.configID: ["ntv_a": "693505", "ntv_tm": "tout"]],
             forKey: Life360QueryParameterStore.customQueryParametersKey
         )
     }
