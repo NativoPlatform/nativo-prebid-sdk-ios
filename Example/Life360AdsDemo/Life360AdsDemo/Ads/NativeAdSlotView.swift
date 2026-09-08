@@ -15,12 +15,7 @@ import Life360AdsSDK
 /// exactly the transition the surrounding feed is built to produce.
 final class NativeAdSlotView: AdSlotView, NativeAdEventDelegate {
 
-    /// Stored impression on the Prebid Server the app initialized against. This is the one slot that depends
-    /// on it to fill: the original API is Prebid-Server-only, so an ID the server doesn't recognize surfaces
-    /// as an error in the log rather than falling back to Nativo demand. The sample server under
-    /// `prebid-server/sample/001_banner/stored_requests` ships banner-only impressions, so a native stored
-    /// impression has to be added there — or point the app at the Life360 dev host.
-    private static let configID = "test-imp-id-native"
+    private static let configID = "test-imp-id-native-omid"
 
     private let contentView = NativeAdContentView()
     private let placeholderLabel = UILabel()

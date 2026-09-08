@@ -14,9 +14,6 @@ import Life360AdsSDK
 /// worth avoiding — a reader shouldn't have to reassemble a banner integration out of a superclass.
 final class BannerAdSlotView: AdSlotView, Life360BannerViewDelegate {
 
-    /// Stored impression on the Prebid Server the app initialized against. This slot fills regardless of
-    /// whether the server knows the ID, because Life360 demand is requested on its own path and ignores the
-    /// stored impression.
     private static let configID = "nativo-imp-id"
 
     /// Size requested in the auction.
